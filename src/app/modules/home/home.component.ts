@@ -16,7 +16,7 @@ export class HomeComponent {
   })
 
   loginFormRegister = this.formBuilder.group({
-    nome: ['', Validators.required],
+    name: ['', Validators.required],
     email: ['', Validators.required],
     password: ['', Validators.required]
   })
@@ -24,11 +24,11 @@ export class HomeComponent {
   constructor(private formBuilder: FormBuilder) {}
 
   onSubmitLoginForm(): void{
-    console.log('Dados do Formulário de Login', this.loginForm.validator)
+    console.log('Login Form Data', this.loginForm.validator)
   }
 
   onSubmitLoginFormRegister(): void{
-    console.log('Dados do Formulário de Registro', this.loginFormRegister.validator)
+    console.log('Registration Form Data', this.loginFormRegister.validator)
   }
 
   }
