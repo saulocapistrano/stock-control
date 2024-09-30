@@ -12,6 +12,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './modules/home/home.component';
+import { CookieService } from 'ngx-cookie-service';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,7 @@ import { HomeComponent } from './modules/home/home.component';
 
 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [CookieService, MessageService],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
