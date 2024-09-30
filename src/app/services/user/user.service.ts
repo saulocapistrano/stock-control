@@ -8,7 +8,7 @@ import { CreateUserResponse } from 'src/app/models/interfacce/user/CreateUserRes
 import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root' // deixa injetar em qualquer classe
 })
 export class UserService {
 
